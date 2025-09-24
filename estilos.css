@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+header {
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+
+nav {
+    background-color: #ffa270;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section, article {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+footer {
+    text-align: center;
+    background: #ff7043;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+.boton-alerta {
+    display: inline-block;
+    background: #ff7043;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-alerta:hover {
+    background: #e64a19;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section, article {
+        padding: 10px;
+    }
+
+    .boton-alerta {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+
+@media (min-width: 901px) {
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
